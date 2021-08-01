@@ -8,17 +8,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Duan1_Nhom17_CP16201">
-        <activity android:name=".FlashActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.HuongDanActivity" android:theme="@style/FullScren"></activity>
+        <activity android:name=".activity.PlayActivity" android:theme="@style/FullScren"/>
+        <activity android:name=".activity.DiemActivity" android:theme="@style/FullScren"/>
+        <activity
+            android:name=".activity.FlashActivity"
+            android:theme="@style/FullScren">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/FullScren" />
     </application>
 
 </manifest>

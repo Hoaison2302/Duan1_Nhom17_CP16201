@@ -4,15 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/backgroud"
+    tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+
+    <Button
+        android:id="@+id/btnChoimoi"
+        style="@style/Button"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="312dp"
+        android:text="Chơi mới"
+        android:backgroundTint="#9900ff"
+        android:background="@drawable/border_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnXemdiem"
+        style="@style/Button"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:text="Xem điểm"
+        android:backgroundTint="#9900ff"
+        android:background="@drawable/border_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChoimoi" />
+
+    <Button
+        android:id="@+id/btnHuongdan"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="#9900ff"
+        android:text="Hướng dẫn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnXemdiem" />
+
+    <Button
+        android:onClick="btn_Thoat"
+        android:id="@+id/btnExit"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginLeft="292dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="#9900ff"
+        android:text="Thoát"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnXemdiem" />
+
+    <ImageView
+        android:id="@+id/imgsoud"
+        android:layout_width="100dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/soud"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Button1">
+        <item name="android:background">@drawable/border_button</item>
+        <item name="android:backgroundTint">@drawable/border_button</item>
+
+        ="#9900ff"
+        <item name="android:layout_width">114dp</item>
+        <item name="android:layout_height">64dp</item>
+
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+    </style>
+
+    <style name="Button" tools:ignore="DuplicateDefinition">
+        <item name="android:background">@drawable/border_button</item>
+        <item name="android:backgroundTint">#9900ff</item>
+        <item name="android:layout_width">114dp</item>
+        <item name="android:layout_height">64dp</item>
+    </style>
+</resources>

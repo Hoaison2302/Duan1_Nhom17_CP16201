@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splas"
-    android:scaleX="1"
-    android:scaleY="1"
-    tools:context=".activity.FlashActivity">
+    tools:context=".activity.PlayActivity">
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
