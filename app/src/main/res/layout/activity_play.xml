@@ -104,8 +104,8 @@
         android:id="@+id/txtTime"
         android:layout_width="39dp"
         android:layout_height="30dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
         android:layout_marginTop="16dp"
         android:text="12"
         android:textColor="#FFFFFF"
@@ -161,5 +161,18 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgSuggest"></LinearLayout>
+
+    <TextView
+        android:id="@+id/txtLevel"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Lv5"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/txtTime"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

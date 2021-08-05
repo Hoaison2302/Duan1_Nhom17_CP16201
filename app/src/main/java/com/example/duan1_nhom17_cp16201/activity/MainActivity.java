@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imgSoud;
     Button btnChoimoi,btnXemdiem,btnHuongdan;
     private DiemSQL diemSQL;
-    static int diem;
+    static int diem,level;
     static int chuyencau;
     static int nhac=0;
     @Override
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent= new Intent(MainActivity.this,PlayActivity.class);
                 diem=0;
                 chuyencau=0;
+                level=1;
                 startActivity(intent);
                 finish();
             }

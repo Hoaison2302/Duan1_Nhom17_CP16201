@@ -9,9 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.HuongDanActivity" android:theme="@style/FullScren"></activity>
-        <activity android:name=".activity.PlayActivity" android:theme="@style/FullScren"/>
-        <activity android:name=".activity.DiemActivity" android:theme="@style/FullScren"/>
+        <activity android:name=".activity.FalseActivity"></activity>
+        <activity android:name=".activity.TrueActivity" />
+        <activity android:name=".activity.KetthucActivity" />
+        <activity
+            android:name=".activity.HuongDanActivity"
+            android:theme="@style/FullScren" />
+        <activity
+            android:name=".activity.PlayActivity"
+            android:theme="@style/FullScren" />
+        <activity
+            android:name=".activity.DiemActivity"
+            android:theme="@style/FullScren" />
         <activity
             android:name=".activity.FlashActivity"
             android:theme="@style/FullScren">
