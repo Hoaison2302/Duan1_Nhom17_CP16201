@@ -28,7 +28,7 @@ public class TrueActivity extends AppCompatActivity {
         setContentView(R.layout.activity_true);
 
         MainActivity.chuyencau++;
-        if(MainActivity.chuyencau==2){
+        if(MainActivity.chuyencau % 2==0){
             MainActivity.level+=1;
         }
 

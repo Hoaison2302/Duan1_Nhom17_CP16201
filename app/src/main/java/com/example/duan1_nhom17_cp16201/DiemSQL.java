@@ -28,7 +28,7 @@ public class DiemSQL extends SQLiteOpenHelper {
     private String AV_TABLE = "av";
 
     public DiemSQL(Context context) {
-        super(context, DB_NAME, null, 1);// 1? Its database Version
+        super(context, DB_NAME, null, 2);// 1? Its database Version
         if (android.os.Build.VERSION.SDK_INT >= 17) {
             DB_PATH = context.getApplicationInfo().dataDir + "/databases/";
         } else {

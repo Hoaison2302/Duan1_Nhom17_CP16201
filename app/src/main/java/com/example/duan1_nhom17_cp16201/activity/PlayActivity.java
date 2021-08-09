@@ -50,7 +50,7 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
         Anhxa();
-        txtLevel.setText(MainActivity.level+"");
+        txtLevel.setText("lv "+MainActivity.level+"");
         cauhoiList=new ArrayList<>();
         songaunhien = ngaunhien();
         creatImage();
@@ -301,7 +301,6 @@ public class PlayActivity extends AppCompatActivity {
                         odapan--;
                         button1.setVisibility(View.VISIBLE);
                         button.setText("");
-                        Log.e("vị trí", vitri + "");Log.e("Ô đáp án",odapan+"");
                     }
 
                 }
@@ -337,16 +336,14 @@ public class PlayActivity extends AppCompatActivity {
                         for (int j = 0; j < dapan.length(); j++) {
                             if (btnHienthi[j].getText() == "") {
                                 btnHienthi[j].setText(button.getText().toString());
+                                btnHienthi[j].setText(button.getText().toString());
                                 break;
                             }
                         }
-                        Log.e("dem", dem + "");
-                        Log.e("vitri", vitri + "");
                         id = 10 + finalI;
                         button.setId(id);
                         mangid[dem] = id;
                         button.setVisibility(View.INVISIBLE);
-                        Log.e("Ô đáp án",odapan+"");
                         if (odapan == dapan.length()) {
                             for (int j = 0; j < dapan.length(); j++) {
                                 ketqua += btnHienthi[j].getText();
@@ -356,6 +353,7 @@ public class PlayActivity extends AppCompatActivity {
                                 MainActivity.diem+=20;
                                 Log.e("chuyencau", MainActivity.chuyencau +"" );
                                 if (MainActivity.chuyencau == 4) {
+                                    Log.e("onClick: ","chạy vào đây khi hết 4 câu" );
                                     Intent intent = new Intent(PlayActivity.this, KetthucActivity.class);
                                     startActivity(intent);
                                 } else {
@@ -406,13 +404,11 @@ public class PlayActivity extends AppCompatActivity {
                                 break;
                             }
                         }
-                        Log.e("dem", dem + "");
-                        Log.e("vitri", vitri + "");
+
                         button.setId(finalI);
                         mangid[dem] = finalI;
 
                         button.setVisibility(View.INVISIBLE);
-                        Log.e("Ô đáp án",odapan+"");
                         if (odapan == dapan.length()) {
                             for (int j = 0; j < dapan.length(); j++) {
                                 ketqua += btnHienthi[j].getText();

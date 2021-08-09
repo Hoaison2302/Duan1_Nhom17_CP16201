@@ -11,9 +11,10 @@
     <Button
         android:id="@+id/btnChoimoi"
         style="@style/Button"
+
+        android:layout_marginTop="312dp"
         android:layout_width="114dp"
         android:layout_height="64dp"
-        android:layout_marginTop="312dp"
         android:text="Chơi mới"
         android:backgroundTint="#9900ff"
         android:background="@drawable/border_button"
@@ -69,8 +70,8 @@
 
     <ImageView
         android:id="@+id/imgsoud"
-        android:layout_width="100dp"
-        android:layout_height="73dp"
+        android:layout_width="63dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/soud"
         app:layout_constraintBottom_toBottomOf="parent"

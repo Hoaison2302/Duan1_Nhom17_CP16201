@@ -4,19 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.FalseActivity">
+    android:background="@drawable/nenthua"
+    tools:context="activity.FalseActivity">
+
+    <Button
+        android:id="@+id/btnFinish"
+        style="@style/Button"
+        android:backgroundTint="#9900ff"
+        android:background="@drawable/border_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="344dp"
+        android:text="Kết Thúc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="137dp"
-        android:layout_marginLeft="137dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="216dp"
-        android:layout_marginRight="216dp"
-        android:text="False"
+        android:layout_marginTop="48dp"
+        android:text="Bạn trả lời sai rồi"
+        android:textColor="#FFFEFC"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="THẬT TIẾC"
+        android:textColor="#FDF505"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

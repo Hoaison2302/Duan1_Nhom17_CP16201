@@ -31,7 +31,7 @@ public class DiemActivity extends AppCompatActivity {
 
         img_back_diem=findViewById(R.id.imgBack_Diem);
 
-        diemSQL=new DiemSQL(this);
+        diemSQL=new DiemSQL(DiemActivity.this);
         diemList=diemSQL.getAll();
         diemAdapter=new DiemAdapter(this,diemList);
 
